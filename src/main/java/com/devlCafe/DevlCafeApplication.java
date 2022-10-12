@@ -10,4 +10,5 @@ public class DevlCafeApplication {
         SpringApplication.run(DevlCafeApplication.class, args);
     }
 
+
 }
