@@ -24,6 +24,10 @@ public class WebController {
         return "login";
     }
 
+    @RequestMapping(value="/tables",method = RequestMethod.GET)
+    public String tables(){
+        return "tables";
+    }
 
 }
 
