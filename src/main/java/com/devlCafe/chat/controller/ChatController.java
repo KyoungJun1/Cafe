@@ -1,6 +1,7 @@
 package com.devlCafe.chat.controller;
 
 import com.devlCafe.chat.model.ChatMessage;
+import org.hibernate.Session;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.messaging.handler.annotation.SendTo;
@@ -8,14 +9,22 @@ import org.springframework.stereotype.Controller;
 
 import org.springframework.messaging.simp.SimpMessageHeaderAccessor;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import javax.servlet.http.HttpSession;
 
 @Controller
 public class ChatController {
 
 
     @GetMapping("/chat/room")
-    public String room(){
-        return "/chat/chat";
+    public ModelAndView room(HttpSession session){
+        ModelAndView mav = new ModelAndView();
+        mav.setViewName("/chat/chat");
+
+        mav.addObject("temp", session.getAttribute("temp"));
+
+        return mav;
     }
 
 
