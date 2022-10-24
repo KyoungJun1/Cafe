@@ -1600,7 +1600,7 @@
   * but called in the minimum time possible.
   *
   * @method
-  * @memberof Popper.Utils
+  * @userof Popper.Utils
   * @argument {Function} fn
   * @returns {Function}
   */
@@ -1609,7 +1609,7 @@
   /**
    * Check if the given variable is a function
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @argument {Any} functionToCheck - variable to check
    * @returns {Boolean} answer to: is a function?
    */
@@ -1621,7 +1621,7 @@
   /**
    * Get CSS computed property of the given element
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @argument {Eement} element
    * @argument {String} property
    */
@@ -1638,7 +1638,7 @@
   /**
    * Returns the parentNode or the host of the element
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @argument {Element} element
    * @returns {Element} parent
    */
@@ -1652,7 +1652,7 @@
   /**
    * Returns the scrolling parent of the given element
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @argument {Element} element
    * @returns {Element} scroll parent
    */
@@ -1687,7 +1687,7 @@
   /**
    * Returns the reference node of the reference object, or the reference object itself.
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @param {Element|Object} reference - the reference element (the popper will be relative to this)
    * @returns {Element} parent
    */
@@ -1701,7 +1701,7 @@
   /**
    * Determines if the browser is Internet Explorer
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @param {Number} version to check
    * @returns {Boolean} isIE
    */
@@ -1718,7 +1718,7 @@
   /**
    * Returns the offset parent of the given element
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @argument {Element} element
    * @returns {Element} offset parent
    */
@@ -1763,7 +1763,7 @@
   /**
    * Finds the root node (document, shadowDOM root) of the given element
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @argument {Element} node
    * @returns {Element} root node
    */
@@ -1778,7 +1778,7 @@
   /**
    * Finds the offset parent common to the two provided nodes
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @argument {Element} element1
    * @argument {Element} element2
    * @returns {Element} common offset parent
@@ -1822,7 +1822,7 @@
   /**
    * Gets the scroll value of the given element in the given side (top and left)
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @argument {Element} element
    * @argument {String} side `top` or `left`
    * @returns {number} amount of scrolled pixels
@@ -1845,7 +1845,7 @@
   /*
    * Sum or subtract the element scroll values (left and top) from a given rect object
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @param {Object} rect - Rect object you want to change
    * @param {HTMLElement} element - The element from the function reads the scroll values
    * @param {Boolean} subtract - set to true if you want to subtract the scroll values
@@ -1867,7 +1867,7 @@
   /*
    * Helper to detect borders of a given element
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @param {CSSStyleDeclaration} styles
    * Result of `getStyleComputedProperty` on the given element
    * @param {String} axis - `x` or `y`
@@ -1956,7 +1956,7 @@
   /**
    * Given element offsets, generate an output similar to getBoundingClientRect
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @argument {Object} offsets
    * @returns {Object} ClientRect like output
    */
@@ -1970,7 +1970,7 @@
   /**
    * Get bounding client rect of given element
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @param {HTMLElement} element
    * @return {Object} client rect
    */
@@ -2099,7 +2099,7 @@
   /**
    * Check if the given element is fixed or is inside a fixed parent
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @argument {Element} element
    * @argument {Element} customContainer
    * @returns {Boolean} answer to "isFixed?"
@@ -2122,7 +2122,7 @@
   /**
    * Finds the first parent of an element that has a transformed property defined
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @argument {Element} element
    * @returns {Element} first transformed parent or documentElement
    */
@@ -2142,7 +2142,7 @@
   /**
    * Computed the boundaries limits and return them
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @param {HTMLElement} popper
    * @param {HTMLElement} reference
    * @param {number} padding
@@ -2215,7 +2215,7 @@
    * Utility used to transform the `auto` placement to the placement with more
    * available space.
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @argument {Object} data - The data object generated by update method
    * @argument {Object} options - Modifiers configuration and options
    * @returns {Object} The data object, properly modified
@@ -2274,7 +2274,7 @@
   /**
    * Get offsets to the reference element
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @param {Object} state
    * @param {Element} popper - the popper element
    * @param {Element} reference - the reference element (the popper will be relative to this)
@@ -2291,7 +2291,7 @@
   /**
    * Get the outer sizes of the given element (offset size + margins)
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @argument {Element} element
    * @returns {Object} object containing width and height properties
    */
@@ -2310,7 +2310,7 @@
   /**
    * Get the opposite placement of the given one
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @argument {String} placement
    * @returns {String} flipped placement
    */
@@ -2324,7 +2324,7 @@
   /**
    * Get offsets to the popper
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @param {Object} position - CSS position the Popper will get applied
    * @param {HTMLElement} popper - the popper element
    * @param {Object} referenceOffsets - the reference offsets (the popper will be relative to this)
@@ -2363,7 +2363,7 @@
   /**
    * Mimics the `find` method of Array
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @argument {Array} arr
    * @argument prop
    * @argument value
@@ -2382,7 +2382,7 @@
   /**
    * Return the index of the matching object
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @argument {Array} arr
    * @argument prop
    * @argument value
@@ -2407,7 +2407,7 @@
    * Loop trough the list of modifiers and run them in order,
    * each of them will then edit the data object.
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @param {dataObject} data
    * @param {Array} modifiers
    * @param {String} ends - Optional modifier name used as stopper
@@ -2441,7 +2441,7 @@
    * the new style.<br />
    * Prefer `scheduleUpdate` over `update` because of performance reasons.
    * @method
-   * @memberof Popper
+   * @userof Popper
    */
   function update() {
     // if popper is destroyed, don't perform any further update
@@ -2492,7 +2492,7 @@
   /**
    * Helper used to know if the given modifier is enabled.
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @returns {Boolean}
    */
   function isModifierEnabled(modifiers, modifierName) {
@@ -2506,7 +2506,7 @@
   /**
    * Get the prefixed supported property name
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @argument {String} property (camelCase)
    * @returns {String} prefixed property (camelCase or PascalCase, depending on the vendor prefix)
    */
@@ -2527,7 +2527,7 @@
   /**
    * Destroys the popper.
    * @method
-   * @memberof Popper
+   * @userof Popper
    */
   function destroy() {
     this.state.isDestroyed = true;
@@ -2578,7 +2578,7 @@
   /**
    * Setup needed event listeners used to update the popper position
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @private
    */
   function setupEventListeners(reference, options, state, updateBound) {
@@ -2599,7 +2599,7 @@
    * It will add resize/scroll events and start recalculating
    * position of the popper element when they are triggered.
    * @method
-   * @memberof Popper
+   * @userof Popper
    */
   function enableEventListeners() {
     if (!this.state.eventsEnabled) {
@@ -2610,7 +2610,7 @@
   /**
    * Remove event listeners used to update the popper position
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @private
    */
   function removeEventListeners(reference, state) {
@@ -2635,7 +2635,7 @@
    * when they are triggered. It also won't trigger `onUpdate` callback anymore,
    * unless you call `update` method manually.
    * @method
-   * @memberof Popper
+   * @userof Popper
    */
   function disableEventListeners() {
     if (this.state.eventsEnabled) {
@@ -2647,7 +2647,7 @@
   /**
    * Tells if a given input is a number
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @param {*} input to check
    * @return {Boolean}
    */
@@ -2658,7 +2658,7 @@
   /**
    * Set the style to the given popper
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @argument {Element} element - Element to apply the style to
    * @argument {Object} styles
    * Object with a list of properties and values which will be applied to the element
@@ -2677,7 +2677,7 @@
   /**
    * Set the attributes to the given popper
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @argument {Element} element - Element to apply the attributes to
    * @argument {Object} styles
    * Object with a list of properties and values which will be applied to the element
@@ -2695,7 +2695,7 @@
 
   /**
    * @function
-   * @memberof Modifiers
+   * @userof Modifiers
    * @argument {Object} data - The data object generated by `update` method
    * @argument {Object} data.styles - List of style properties - values to apply to popper element
    * @argument {Object} data.attributes - List of attribute properties - values to apply to popper element
@@ -2726,7 +2726,7 @@
    * to add margins to the popper margins needs to be calculated to get the
    * correct popper offsets.
    * @method
-   * @memberof Popper.modifiers
+   * @userof Popper.modifiers
    * @param {HTMLElement} reference - The reference element used to position the popper
    * @param {HTMLElement} popper - The HTML element used as popper
    * @param {Object} options - Popper.js options
@@ -2751,7 +2751,7 @@
 
   /**
    * @function
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @argument {Object} data - The data object generated by `update` method
    * @argument {Boolean} shouldRound - If the offsets should be rounded at all
    * @returns {Object} The popper's position offsets rounded
@@ -2802,7 +2802,7 @@
 
   /**
    * @function
-   * @memberof Modifiers
+   * @userof Modifiers
    * @argument {Object} data - The data object generated by `update` method
    * @argument {Object} options - Modifiers configuration and options
    * @returns {Object} The data object, properly modified
@@ -2902,7 +2902,7 @@
    * Helper used to know if the given modifier depends from another one.<br />
    * It checks if the needed modifier is listed and enabled.
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @param {Array} modifiers - list of modifiers
    * @param {String} requestingName - name of requesting modifier
    * @param {String} requestedName - name of requested modifier
@@ -2928,7 +2928,7 @@
 
   /**
    * @function
-   * @memberof Modifiers
+   * @userof Modifiers
    * @argument {Object} data - The data object generated by update method
    * @argument {Object} options - Modifiers configuration and options
    * @returns {Object} The data object, properly modified
@@ -3011,7 +3011,7 @@
   /**
    * Get the opposite placement variation of the given one
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @argument {String} placement variation
    * @returns {String} flipped placement variation
    */
@@ -3053,7 +3053,7 @@
    * @enum {String}
    * @readonly
    * @method placements
-   * @memberof Popper
+   * @userof Popper
    */
   var placements = ['auto-start', 'auto', 'auto-end', 'top-start', 'top', 'top-end', 'right-start', 'right', 'right-end', 'bottom-end', 'bottom', 'bottom-start', 'left-end', 'left', 'left-start'];
 
@@ -3065,7 +3065,7 @@
    * clockwise (or counter-clockwise).
    *
    * @method
-   * @memberof Popper.Utils
+   * @userof Popper.Utils
    * @argument {String} placement - A valid placement (it accepts variations)
    * @argument {Boolean} counter - Set to true to walk the placements counterclockwise
    * @returns {Array} placements including their variations
@@ -3086,7 +3086,7 @@
 
   /**
    * @function
-   * @memberof Modifiers
+   * @userof Modifiers
    * @argument {Object} data - The data object generated by update method
    * @argument {Object} options - Modifiers configuration and options
    * @returns {Object} The data object, properly modified
@@ -3183,7 +3183,7 @@
 
   /**
    * @function
-   * @memberof Modifiers
+   * @userof Modifiers
    * @argument {Object} data - The data object generated by update method
    * @argument {Object} options - Modifiers configuration and options
    * @returns {Object} The data object, properly modified
@@ -3213,7 +3213,7 @@
   /**
    * Converts a string containing value + unit into a px value number
    * @function
-   * @memberof {modifiers~offset}
+   * @userof {modifiers~offset}
    * @private
    * @argument {String} str - Value + unit string
    * @argument {String} measurement - `height` or `width`
@@ -3266,7 +3266,7 @@
   /**
    * Parse an `offset` string to extrapolate `x` and `y` numeric offsets.
    * @function
-   * @memberof {modifiers~offset}
+   * @userof {modifiers~offset}
    * @private
    * @argument {String} offset
    * @argument {Object} popperOffsets
@@ -3343,7 +3343,7 @@
 
   /**
    * @function
-   * @memberof Modifiers
+   * @userof Modifiers
    * @argument {Object} data - The data object generated by update method
    * @argument {Object} options - Modifiers configuration and options
    * @argument {Number|String} options.offset=0
@@ -3386,7 +3386,7 @@
 
   /**
    * @function
-   * @memberof Modifiers
+   * @userof Modifiers
    * @argument {Object} data - The data object generated by `update` method
    * @argument {Object} options - Modifiers configuration and options
    * @returns {Object} The data object, properly modified
@@ -3457,7 +3457,7 @@
 
   /**
    * @function
-   * @memberof Modifiers
+   * @userof Modifiers
    * @argument {Object} data - The data object generated by `update` method
    * @argument {Object} options - Modifiers configuration and options
    * @returns {Object} The data object, properly modified
@@ -3490,7 +3490,7 @@
 
   /**
    * @function
-   * @memberof Modifiers
+   * @userof Modifiers
    * @argument {Object} data - The data object generated by update method
    * @argument {Object} options - Modifiers configuration and options
    * @returns {Object} The data object, properly modified
@@ -3528,7 +3528,7 @@
 
   /**
    * @function
-   * @memberof Modifiers
+   * @userof Modifiers
    * @argument {Object} data - The data object generated by `update` method
    * @argument {Object} options - Modifiers configuration and options
    * @returns {Object} The data object, properly modified
@@ -3579,7 +3579,7 @@
      * element.<br />
      * It will read the variation of the `placement` property.<br />
      * It can be one either `-end` or `-start`.
-     * @memberof modifiers
+     * @userof modifiers
      * @inner
      */
     shift: {
@@ -3626,7 +3626,7 @@
      * > with their reference element, unfortunately, you will have to disable the `flip` modifier.
      * > You can read more on this at this [issue](https://github.com/FezVrasta/popper.js/issues/373).
      *
-     * @memberof modifiers
+     * @userof modifiers
      * @inner
      */
     offset: {
@@ -3656,7 +3656,7 @@
      * outside its boundaries, the popper will overflow (or completely leave)
      * the boundaries in order to remain attached to the edge of the reference.
      *
-     * @memberof modifiers
+     * @userof modifiers
      * @inner
      */
     preventOverflow: {
@@ -3693,7 +3693,7 @@
      * enabled and you want to ensure that it points to its reference element.
      * It cares only about the first axis. You can still have poppers with margin
      * between the popper and its reference element.
-     * @memberof modifiers
+     * @userof modifiers
      * @inner
      */
     keepTogether: {
@@ -3712,7 +3712,7 @@
      * pixels of conjunction are needed.
      *
      * It has no effect if no `arrowElement` is provided.
-     * @memberof modifiers
+     * @userof modifiers
      * @inner
      */
     arrow: {
@@ -3734,7 +3734,7 @@
      *
      * **NOTE:** this modifier will interrupt the current update cycle and will
      * restart it if it detects the need to flip the placement.
-     * @memberof modifiers
+     * @userof modifiers
      * @inner
      */
     flip: {
@@ -3785,7 +3785,7 @@
      * Modifier used to make the popper flow toward the inner of the reference element.
      * By default, when this modifier is disabled, the popper will be placed outside
      * the reference element.
-     * @memberof modifiers
+     * @userof modifiers
      * @inner
      */
     inner: {
@@ -3804,7 +3804,7 @@
      * out of boundaries.
      *
      * Requires the `preventOverflow` modifier before it in order to work.
-     * @memberof modifiers
+     * @userof modifiers
      * @inner
      */
     hide: {
@@ -3828,7 +3828,7 @@
      * with previous versions of Popper.js. Expect the modifiers ordering method
      * to change in future major versions of the library.
      *
-     * @memberof modifiers
+     * @userof modifiers
      * @inner
      */
     computeStyle: {
@@ -3870,7 +3870,7 @@
      *
      * Just disable this modifier and define your own to achieve the desired effect.
      *
-     * @memberof modifiers
+     * @userof modifiers
      * @inner
      */
     applyStyle: {
@@ -3925,7 +3925,7 @@
    * ```
    * @type {Object}
    * @static
-   * @memberof Popper
+   * @userof Popper
    */
   var Defaults = {
     /**
@@ -4094,7 +4094,7 @@
       /**
        * Schedules an update. It will run on the next UI update available.
        * @method scheduleUpdate
-       * @memberof Popper
+       * @userof Popper
        */
 
 
@@ -4111,8 +4111,8 @@
        * @private
        * @type {Object}
        * @deprecated since version 1.8
-       * @member Utils
-       * @memberof Popper
+       * @user Utils
+       * @userof Popper
        */
 
     }]);

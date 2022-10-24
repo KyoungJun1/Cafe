@@ -9131,7 +9131,7 @@ var exports$4 = core_element.extend({
 			}
 		}
 
-		// Remember Last Actives
+		// Reuser Last Actives
 		changed = !helpers$1.arrayEquals(me._active, me._lastActive);
 
 		// Only handle target event on tooltip change
@@ -10247,7 +10247,7 @@ helpers$1.extend(Chart.prototype, /** @lends Chart */ {
 
 		changed = !helpers$1.arrayEquals(me.active, me.lastActive);
 
-		// Remember Last Actives
+		// Reuser Last Actives
 		me.lastActive = me.active;
 
 		return changed;
@@ -10924,14 +10924,14 @@ function abstract() {
 /**
  * Date adapter (current used by the time scale)
  * @namespace Chart._adapters._date
- * @memberof Chart._adapters
+ * @userof Chart._adapters
  * @private
  */
 
 /**
  * Currently supported unit string values.
  * @typedef {('millisecond'|'second'|'minute'|'hour'|'day'|'week'|'month'|'quarter'|'year')}
- * @memberof Chart._adapters._date
+ * @userof Chart._adapters._date
  * @name Unit
  */
 
@@ -11020,8 +11020,8 @@ helpers$1.extend(DateAdapter.prototype, /** @lends DateAdapter */ {
 	}
 });
 
-DateAdapter.override = function(members) {
-	helpers$1.extend(DateAdapter.prototype, members);
+DateAdapter.override = function(users) {
+	helpers$1.extend(DateAdapter.prototype, users);
 };
 
 var _date = DateAdapter;
@@ -11528,7 +11528,7 @@ var Scale = core_element.extend({
 		me.afterDataLimits();
 
 		// Ticks - `this.ticks` is now DEPRECATED!
-		// Internal ticks are now stored as objects in the PRIVATE `this._ticks` member
+		// Internal ticks are now stored as objects in the PRIVATE `this._ticks` user
 		// and must not be accessed directly from outside this class. `this.ticks` being
 		// around for long time and not marked as private, we can't change its structure
 		// without unexpected breaking changes. If you need to access the scale ticks,
